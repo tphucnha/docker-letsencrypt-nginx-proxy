@@ -23,6 +23,7 @@ services:
       - nginx_vhost.d:/etc/nginx/vhost.d
       - nginx_html:/usr/share/nginx/html
       - nginx_dhparam:/etc/nginx/dhparam
+      - ./custom-nginx-config.conf:/etc/nginx/conf.d/custom-nginx-config.conf
     networks:
       - nginx-proxy-network
 
